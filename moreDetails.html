@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normlize.css" />
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/moreDetails.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Google font (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet"/>
+
+    <title>تقديم طلب توظيف</title>
+   
+</head>
+<body>
+    <div class="offer-details">
+       
+    </div>
+    <div class="offer">
+        <div class="container">
+            <form onsubmit=" return false"  >
+                
+                <label for="fullname">الاسم الكامل</label>
+                <input type="text" name="fullname" id="fullname">                    
+                <label for="email"> البريد الالكتروني</label>
+                <input type="email" name="email" id="email">                    
+                
+               
+                <label for="phone">رقم الموبايل</label>
+                <input type="number" name="phone" id="phone">     
+               
+                <label for="file">ملف السيرة الذاتية </label>
+                <input type="file" name="file" id="file"   accept="application/pdf">     
+                
+                <div id="error"></div>
+                
+                    <button id ='button' >أرسل طلب التقديم</button>
+                  
+            </form>
+
+
+        </div>
+    </div>
+
+    
+    <div class="back-main">
+        <div class="container">
+            <p class="bbb">العودة للصفحة الرئيسية</p>
+        </div>
+    </div>
+    <script src="js/back.js"></script>
+    <script src="js/moreDetails.js"></script>
+</body>
+</html>

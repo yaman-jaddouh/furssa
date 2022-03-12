@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/normlize.css" />
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/fursaa.css" />
+    <link rel="stylesheet" href="./css/main-page.css" />
+    <!-- font Awosome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Google font (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet"/>
+    
+   
+    <title>فرصي</title>
+
+</head>
+<body>
+<div class=".create-offer">
+    <div class="container">
+        <p class="main-title" id="open-button" >انشاء فرصة عمل </p>   
+    </div>
+</div>
+
+<p class="error-message container disactive ">
+    
+</p>
+
+<div class="myfurssa">
+    
+    <div class="container"> 
+        <h2>فرصي </h2>
+        <ul>
+
+        </ul>
+    </div>
+</div>
+<div class="form disactive">  
+                <form onsubmit="return false">
+                    <span id="close-button-1">x</span>
+                    <label for="text">العنوان</label>
+                    <input type="text" name="text" id="address">
+                    <label for="textaera">الوصف </label>
+                    <textarea type="text" name="textaera" id="textaera"></textarea>
+                    <div class="choose">
+                        
+                        <select name="city" id="city">
+                  
+                            <option value="">--اختر المدينة --</option>
+                            <option value="ale">حلب</option>
+                            <option value="dam">دمشق</option>
+                            <option value="hom">حمص</option>
+                            <option value="ham">حماة</option>
+                            <option value="dar">درعا</option>
+                            <option value="der">دير الزور</option>
+                            <option value="lat">اللاذقية</option>
+                            <option value="tar">طرطوس</option>
+                            <option value="idl">ادلب</option>
+                            <option value="tad">تدمر</option>
+                            <option value="cda">ريف دمشق</option>
+                            <option value="soi">سويداء</option>
+                            <option value="has">حسكة</option>
+                            <option value="qun">قنيطرة</option>
+                        </select>
+                        <select name="time" id="time">
+                            <option value="">--اختر ساعات العمل --</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                           
+                        </select>
+                    </div>
+                    <div id="error"></div>
+                    <div>
+                        <button  id ='button'>إنشاء فرصة عمل </button>
+                    </div>
+                </form>
+            </div>
+
+
+<div class="dialog disactive">
+    <span id ='close-button-2'>X</span>
+    <div class="container">
+        <div class="offers">
+            <ul class="list-offers">
+                
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="back-main">
+    <div class="container">
+        <p class="bbb">العودة للصفحة الرئيسية</p>
+    </div>
+</div>
+<script src="js/back.js"></script>
+<script src="js/fursaa.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normlize.css" />
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main-page.css" />
+    <!-- font Awosome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Google font (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet"/>
+
+    <title>فرصة</title>
+  </head>
+  <body>
+    <div style="z-index: 12" class="header">
+      <div dir="rtl" class="container">
+          <a href="#" class="logo">فرصة</a>
+        <ul class="main-nav">
+          <li id =signup ><a href="./signup.html">التسجيل </a></li>
+          <li id =signin ><a href="./signin.html">تسجيل الدخول</a></li>
+          <li id="logout" onclick="signout()" class="disactive" ><a href="#">تسجيل الخروج</a></li>
+          <li id='myrequest'   class="disactive"><a href="#myrequests">طلباتي</a></li>
+          <li id='myfurssa' class="disactive" ><a href="./fursaa.html">فرصي</a></li>
+          <li id="user" class="disactive"> <a ></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jobs">
+      <div class="container">
+        <div class="text">
+          <h1>موقع فرصة</h1>
+          <p>يمكنك التسجيل كصاحب شركة تنشر فرص عمل او كشخص يبحث عن عمل</p>
+        </div>
+        <div class="image">
+          <img src="./img/undraw_Job_hunt_re_q203-removebg.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="search">
+      <div class="container">
+        <input type="text" placeholder="ابحث عن فرصة عمل "  id="search" />
+        <button id="button-search">ابحث</button>
+
+      </div>
+    </div>
+    <div class="choose">
+      <div class="container">
+        
+      <select name="city" id="city">
+
+          <option value="">--اختر المدينة --</option>
+          <option value="ale">حلب</option>
+          <option value="dam">دمشق</option>
+          <option value="hom">حمص</option>
+          <option value="ham">حماة</option>
+          <option value="dar">درعا</option>
+          <option value="der">دير الزور</option>
+          <option value="lat">اللاذقية</option>
+          <option value="tar">طرطوس</option>
+          <option value="idl">ادلب</option>
+          <option value="tad">تدمر</option>
+          <option value="cda">ريف دمشق</option>
+          <option value="soi">سويداء</option>
+          <option value="has">حسكة</option>
+          <option value="qun">قنيطرة</option>
+      </select>
+       
+      <select name="time" id="time">
+          <option value="">--اختر ساعات العمل --</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+         
+      </select>
+        
+      </div>
+    </div>
+
+    <div class="furssa" id="furssa">
+      <div class="main-title">فرص العمل</div>
+
+
+      <div class="container"></div>
+    
+    </div>
+
+    
+    <script src="js/index.js"></script>
+  </body>
+</html>

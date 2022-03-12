@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normlize.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/signup.css">
+
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Google font (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet"/>
+
+    <title>التسجيل في الموقع</title>
+</head>
+<body>
+
+    <div class = 'sign-up'>
+        <h1 class="logo">فرصة</h1>
+        <div class="container">
+            
+            
+                <form onsubmit="return false" >
+                    <h1>انشاء حساب</h1>
+                    <label for="fullname">الاسم الكامل</label>
+                    <input type="text" name="fullname" id="fullname">                    
+                    <label for="email"> البريد الالكتروني</label>
+                    <input type="email" name="email" id="email">                    
+                    
+                   
+                    <label for="pass">كلمة المرور</label>
+                    <input type="password" name="pass" id="pass">     
+                   
+                    <label for="replypass">تأكيد كلمة المرور </label>
+                    <input type="password" name="replypass" id="replypass">     
+                    
+                    <div class="error"></div>
+                    <div>
+                        <button id ='button' >انشاء حساب</button>
+                        <label for="normal-person">شخص  </label>
+                        <input type="radio" name="choose" id="normal-person">     
+                        <label for="company">فعالية</label>
+                        <input type="radio" name="choose" id="company">     
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="back-main">
+        <div class="container">
+            <p class="bbb">العودة للصفحة الرئيسية</p>
+        </div>
+    </div>
+    
+    <script  src="./js/signup.js"></script>
+    <script src="./js/back.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

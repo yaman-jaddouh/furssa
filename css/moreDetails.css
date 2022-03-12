@@ -1,0 +1,143 @@
+.offer-details {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.offer-details .container  {
+
+
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.offer-details .container .basic-content {
+    border-bottom: 1px solid rgb( 0 0 0 / 20%);
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    
+}
+.offer-details .container .basic-content .details p{
+    color: #666; 
+}.offer-details .container .basic-content .details h2{
+    color: var(--main-color); 
+}
+.offer-details .container .basic-content img { 
+    width: 200px;
+}
+
+
+@media (max-width :768px)
+{
+    .offer-details .container .basic-content .image {
+        display: none;
+    }
+    .offer-details .container {
+        width: 90vw;
+    }
+    .offer { 
+        width: 90vw;
+    }
+}
+
+
+
+.offer { 
+    margin: 10px auto;
+}
+.offer .container {
+    border-radius: 10px;
+ 
+    /* flex-dSirection: column; */
+    gap: 20px;
+}
+.offer .container form { 
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+    row-gap: 10px;
+    /* border-radius: 5px; */
+}
+.offer .container form input  { 
+    
+    border-color:rgb( 0 0 0 / 20%);
+    height:40px;
+    border-radius: 5px;
+    color: #666;
+    
+}
+.offer .container form input:focus { 
+    outline-color: #bce0fb;
+    box-shadow: 0 0 2px 1px #bce0fb;
+}
+
+input #file-upload-button { 
+    color: red;
+}
+input[type="file"] {
+    width: fit-content;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.offer .container form   button { 
+    /*  width: 120px; */
+    height: 50px; 
+    background-color: var(--main-color);
+    border: 0;
+    color:white;
+    padding: auto 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.back-main  p { 
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    width: fit-content;
+    border: 2px solid #111;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 10px;
+    overflow: hidden;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+
+  
+  }
+  .back-main p:hover::before  { 
+    animation: hover 0.5s  linear forwards;
+  }
+  
+  .back-main  p::before {
+    content: '';
+    width: 0px;
+    
+    height: 0px;
+    background-color: var(--main-color);
+    opacity: 0.3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    border-radius: 50%;
+    
+    transform: translate(-50%,-50%);
+    
+  }
+  @keyframes hover {
+    100% { 
+      width: 200px;
+      height: 200px;
+    }
+      
+    }
+    

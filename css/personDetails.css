@@ -1,0 +1,96 @@
+.details .container .main-address { 
+    color: var(--main-color);
+}
+
+.details .container .data { 
+    border-top: 1px rgb(0 0 0 / 20%) solid; 
+    border-bottom: 1px rgb(0 0 0 / 20%) solid ;
+    padding:10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details .container .buttons { 
+    margin-top: 20px;
+    
+}
+
+.details .container .buttons .accept , 
+.details .container .buttons .reject { 
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+
+}
+.details .container .buttons .accept{
+    
+    background-color: green;
+   
+ }
+ .details .container .buttons .reject{
+    
+    background-color: red;
+  
+ }
+
+ .reject:hover , .accept:hover {
+    box-shadow: 0 0 2px 2px rgb(0 0 0 / 20%);
+ }
+ 
+.accept:active ,.reject:active { 
+    background-color: orange !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.back-main  p { 
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    width: fit-content;
+    border: 2px solid #111;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 10px;
+    overflow: hidden;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+
+  
+  }
+  .back-main p:hover::before  { 
+    animation: hover 0.5s  linear forwards;
+  }
+  
+  .back-main  p::before {
+    content: '';
+    width: 0px;
+    
+    height: 0px;
+    background-color: var(--main-color);
+    opacity: 0.3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    border-radius: 50%;
+    
+    transform: translate(-50%,-50%);
+  }
